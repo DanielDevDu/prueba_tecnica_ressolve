@@ -28,8 +28,6 @@ Plantee tres posibles soluciones al resolver el problema, las expongo brevemente
 
 ### Soluciones
 
-<br/>
-
 #### Simple Solution:
 
 - Aquí sólo se usa los conceptos de la programación orientada a objetos. - En caso de haber un archivo .csv o .json que no tengan una estructura correcta, el programa fallará y dentendrá su ejecución.
