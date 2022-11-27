@@ -2,16 +2,18 @@
 
 import json
 
+
 def read_json():
     with open('parte_2/config_file.json', 'r') as f:
         config = json.load(f)
         return config
 
+
 class ConfigFile:
     """Class to read and write config file"""
-    
-    csv_jobs: int = 5
-    json_jobs: int = 5
+
+    csv_jobs: int = 0
+    json_jobs: int = 0
     files_folder_path: str = read_json()["files_folder_path"]
     dataframe_path: str = read_json()["dataframe_path"]
 

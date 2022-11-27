@@ -9,17 +9,15 @@ from time import sleep
 from ConfigFile import ConfigFile
 
 
-class SimpleManageData:
+class ThreadPoolManageData:
 
     __df = None
-    __file = None
 
     def __init__(self):
         self.__df = pd.DataFrame()
 
     def read(self, file_name: str):
         """Read file and save to dataframe"""
-        self.__file = file_name
         if file_name.endswith('.csv'):
             self.read_csv(file_name)
         elif file_name.endswith('.json'):

@@ -19,7 +19,7 @@ class SimpleExecuter:
 
         for file in all_files:
             self.__manage_data.read(file)
-        self.__manage_data.save_dataframe()
+            self.__manage_data.save_dataframe()
 
     def read(self):
         """Read dataframe from pickle"""
